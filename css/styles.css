@@ -1,0 +1,303 @@
+
+:root{
+      --Text-color: Darkcyan;
+      --Active-text-color: olivedrab;
+      --Visited-text-color: mediumturquoise;    
+      --Button-color: darkcyan;
+      --Button-text-color: white;
+      --Button2-color: maroon;
+      --Button2-text-color: lightyellow;
+      --Button3-color: olive;
+      --Button3-text-color: white;
+      --Border-color: rgba(0, 0, 0, 0.3);
+      --Grid-item-color: Lightgray;
+      --Fill-color: gold;
+      --Fill-color2: tomato;
+
+
+}
+
+body {
+    font-family: 'Arapey', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+  }
+
+  a {
+    color: var(--Text-color);
+  }
+  
+/*Link colors*/
+
+  a:visited {
+    /* visited link */
+    color: var(--Visited-text-color);
+    
+  }
+  a:hover {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+  }
+  
+  a:active {
+    /* selected link */
+    color: var(--Active-text-color);
+  }
+  input, texture, select, button {
+    font-family: system-ui;
+  }
+
+  /*Button*/
+  
+  button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: var(--Button-color);
+    color: var(--Button-text-color);
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid var(--Border-color);
+  }
+  button:hover, button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+  .button__secondary {
+    background-color: var(--Button2-color);
+    color: var(--Button2-text-color);
+  }
+  .navigation-list__item--active {
+    text-decoration: none;
+  }
+
+  .page-header__item {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+  }
+
+  .profile__portrait {
+    float: left;
+  }
+
+  .profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+  }
+
+/* rounded look */
+
+.profile__portrait {
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+.profile__text {
+    flex: 1 1 100px;
+}
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid__item {
+  background-color: var(--Grid-item-color);
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+ /* 
+#2b2b2b
+  #e0b354  */
+
+  /* new button stuff*/
+
+  .button, button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color:var(--Button3-color);
+    color: var(--Button3-text-color);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid var(--Border-color);
+    transition-duration: 0.2s;
+    transition-property: opacity;
+  }
+  
+  button:hover,
+  button:focus,
+  .button:hover,
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 80% */
+    opacity: 0.8;
+  }
+
+  @keyframes color-change {
+    from {
+      /*fill: #edc655; */
+      fill: var(--Fill-color);
+    }
+    to {
+      /*fill: #f76414; */
+      fill: var(--Fill-color2);
+    }
+  }
+
+  .aboutprolile {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+  @media all and (min-width: 500px) and (max-width: 750px){
+    .grid {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+
+
+  .sun {
+    animation: 4s color-change infinite alternate linear;
+  }
+
+
+  /*unbulleted list */
+
+  ul.no-bullet {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+  
+
+  @keyframes cloud-move {
+    from {
+      transform: translate(0, 50px);
+    }
+    to {
+      transform: translate(200px, 50px);
+    }
+  }
+
+  .cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }

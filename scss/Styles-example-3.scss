@@ -1,0 +1,53 @@
+$primary-color: #112055;
+$primary-color-lighter: lighten($primary-color, 20%);
+$primary-color-darker: darken($primary-color, 20%);
+$secondary-color: #4f9d92;
+$text-color-white: #fff;
+$text-color-black: #000;
+
+%box-shared {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+}
+
+.box__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+  font-family: sans-serif;
+  
+  .box-primary {
+    @extend %box-shared;
+    background-color: $primary-color;
+    color: $text-color-white;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .box-primary-lighter {
+    @extend %box-shared;
+    background-color: $primary-color-lighter;
+    color: $text-color-white;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .box-primary-darker {
+    @extend %box-shared;
+    background-color: $primary-color-darker;
+    color: $text-color-white;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+  .box-secondary {
+    @extend %box-shared;
+    background-color: $secondary-color;
+    color: $text-color-black;
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}
