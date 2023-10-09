@@ -3,23 +3,25 @@
 <head>
      
 <title>New page</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="css/style.production.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/style.production.css"> -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
-  <header>
+
     <!-- Header including the logo and the main navigation -->
     <header class="page-header">
       <!-- Add Logo here -->
-      <img src="img/logo.jpg" alt="logo" class="page-header__item">
+      <img src="img/logo.jpg" alt="logo" class="page-header__item shadow">
       <nav class="main-navigation page-header__item">
          <ul role="menubar" class="navigation-list">
             <li role="presentation">
@@ -42,8 +44,8 @@
  <br>
  <main>
 
-   <h1>  Contact Maaike here</h1>
-    <div>
+   <h1>  Contact me here</h1>
+    <div class="paragraph">
       <br>
         Maaike<br> 
         Am Wriezener Bahnhof  <br>
@@ -53,18 +55,17 @@
         Skype: <a href="skype:hello.careerfoundry"> maai-pie</a><br>
         Email: <a href="mailto:office@careerfoundry.com">m.vanpoll@greenmail.net</a>
       </div>
-      <br>
-      <br>
-      <br>
-      
-      <div>
+      <!-- <br> -->
+      <div class="paragraph">
         <form action="" method="post" id="contact-form">
           <label class="standard-label">Email: </label>
           <input type="email" required> 
+          
         
           <label class="standard-label">Telephone: </label>
           <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}"> 
-        
+          
+
           <label class="standard-label">Message: </label>
           <textarea required maxlength="240"></textarea>
           <input type="submit" value="Send message">
@@ -81,16 +82,16 @@
     <div class="social-media">
         <p>Find me on</p>
         <!-- Github logo -->
-        <a href="https://www.github.com/" target="_blank"><img src="img/github_icon.svg" alt="github">
+        <a href="https://github.com/maaikevp" target="_blank"><img src="img/github_icon.svg" alt="github"></a>
         <!-- Twitter logo -->
-        <a href="https://www.twitter.com/" target="_blank"><img src="img/twitter_icon.svg" alt="twitter">
+        <a href="https://www.twitter.com/" target="_blank"><img src="img/twitter_icon.svg" alt="twitter"></a>
         <!-- LinkedIn logo -->
-        <a href="https://uk.linkedin.com" target="_blank"><img src="img/linkedin_icon.svg" alt="linkedin">
+        <a href="https://uk.linkedin.com" target="_blank"><img src="img/linkedin_icon.svg" alt="linkedin"></a>
       </div>
 
 
       <script src="js/tota11y.min.js"></script>
-</body>
+
  </footer>
 
 </body>
