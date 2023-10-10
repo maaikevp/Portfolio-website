@@ -16,14 +16,7 @@
       --Fill-color: gold;
       --Fill-color2: tomato;
       --Shadowcolor: darkslategray;
-      /* rgba(0,0,225,0.6) */
-
-
-/* --Visited-text-color: mediumturquoise;  */
-/* --Grid-item-color: Papayawhip; */
-/* --Background-colour: #AAF0D1;  */
-
-/* color:burlywood */
+    
 
 }
 
@@ -184,9 +177,7 @@ h3 {
 /* Description */
 
   .description {
-    /* padding-left: 100px; */
-    /* flex: 1 1 100px; */
-    margin: 0 auto 0 100px;
+       margin: 0 auto 0 100px;
   }
 
 
@@ -242,7 +233,6 @@ h3 {
 
 .grid__item {
   background-color: var(--Grid-item-color);
-  /* border: 8px purple; */
   padding: 20px;
   border-radius: 5%; 
 }
@@ -261,8 +251,7 @@ h3 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin: 40px;
-  /* border-color: red; */
-  /* border-width: 1em; */
+ 
 }
 
 .grid__item {
@@ -396,6 +385,4 @@ h3 {
 
 
 
-   /* 
-#2b2b2b
-  #e0b354  */
+  
