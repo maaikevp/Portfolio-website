@@ -1,0 +1,9 @@
+{
+  "homepage": "https://maaikevp.github.io/Portfolio-website",
+  "scripts": {
+    "publish": "gh-pages -d portfolio-website"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
