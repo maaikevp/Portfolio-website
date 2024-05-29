@@ -228,6 +228,12 @@ h3 {
 
 /* Grid */
 
+.grid {
+  grid-template-columns: auto auto;
+  align-content: stretch;    
+
+}
+
 .grid__item {
   background-color: var(--Grid-item-color);
   padding: 5px;
