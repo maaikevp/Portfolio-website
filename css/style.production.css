@@ -336,6 +336,7 @@ margin: 40px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
           grid-gap: 10px;
+          font-size: 15px;
   }
   .grid__item:last-child {
     grid-column: auto / auto;
@@ -344,12 +345,17 @@ margin: 40px;
   h1 {
     font-size: 22px;
   }
+  h2 {
+    font-size: 15px;
+  }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px){
   .grid {
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+    font-size: 15px;
   }
   .grid__item:last-child {
     grid-column: auto / auto;
@@ -357,6 +363,9 @@ margin: 40px;
   }
   h1 {
     font-size: 22px;
+  }
+  h2 {
+    font-size: 15px;
   }
 }
 
