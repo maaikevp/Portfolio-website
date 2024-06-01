@@ -250,9 +250,12 @@ grid-template-rows: auto auto; */
 -ms-grid-columns: [first] 40px;
 grid-template-columns: [first] 40px;
 /* align-items: start; */
-
 }
 
+#item {
+  align-self: center;
+  vertical-align: bottom;
+}
 
 .grid > *:nth-child(1) {
   -ms-grid-row: 1;
