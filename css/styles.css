@@ -242,6 +242,13 @@ h3 {
   line-break: auto;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* .grid {
   box-sizing: border-box;
   display: grid;
